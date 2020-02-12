@@ -56,7 +56,6 @@ class GeneralAssessmentInitialFormValidator(CrfFormValidatorMixin, FormValidator
             YES, field="attending_ncd_clinic", field_applicable="use_ncd_clinic_nearby"
         )
 
-        self.required_if(YES, field="attending_ncd_clinic", field_required="ncd_next_appt_date")
-
-
-
+        self.required_if(
+            YES, field="attending_ncd_clinic", field_required="ncd_next_appt_date"
+        )
